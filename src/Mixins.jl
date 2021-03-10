@@ -62,7 +62,7 @@ function shift_mixins(newdef,defs,remaining,code)
   else
     m,rest... = remaining
     Expr(:macrocall, Symbol("@"*string(m)), nothing, newdefs, copy(rest), code)
-  end
+  end |> esc
 end
 
 macro define_mixin(name, block)
