@@ -1,0 +1,13 @@
+name = "Mixins"
+uuid = "8d377e60-254d-4da0-849b-87571f45b325"
+authors = ["Owen Lynch <root@owenlynch.org> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
